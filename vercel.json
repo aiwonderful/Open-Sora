@@ -1,14 +1,15 @@
 {
+  "version": 2,
   "builds": [
     {
-      "src": "gradio/app.py",
-      "use": "@vercel/python"
+      "src": "src/index.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "gradio/app.py"
+      "dest": "src/index.js"
     }
   ]
 }

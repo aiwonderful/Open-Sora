@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "gradio/app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "gradio/app.py"
+    }
+  ]
+}
